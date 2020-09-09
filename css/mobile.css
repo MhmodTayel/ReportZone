@@ -25,3 +25,61 @@
   grid-template-columns: 1fr;
   grid-column: 1;
 }
+
+
+/* Smartphones */
+
+@media(max-width: 600px){
+
+  #main-nav .logo {
+    width: 150px;
+  }
+  #showcase {
+    padding: 1.2rem;
+  }
+  
+  #showcase .showcase-container {
+    grid-template-columns: 1fr;
+  }
+
+  #showcase .showcase-container h1 {
+    font-size: 1.8rem;
+  }
+  #showcase .showcase-container p {
+    font-size: 0.9rem;
+  }
+
+  #showcase .showcase-container a {
+    padding-left: 1rem ;
+    padding-right: 1rem ;
+  }
+
+  #home-articles .articles-container {
+    grid-template-columns: 1fr
+  }
+
+  #main-footer .footer-container {
+    grid-template-columns: 1fr;
+  }
+  #main-footer .footer-container > *:last-child {
+    grid-column: 1;
+  }
+
+  #main-footer .footer-container > *:first-child,  #main-footer .footer-container > *:nth-child(2),#main-footer .footer-container > *:nth-child(3) {
+    border-bottom: #444 dotted 1px;
+    padding-bottom: 1rem ;
+  }
+
+
+
+  .page-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .l-heading {
+    font-size: 1.5rem;
+  }
+
+
+}
