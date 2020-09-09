@@ -95,6 +95,10 @@ p {
   opacity: 0.9;
 }
 
+.l-heading {
+  font-size: 2rem;
+}
+
 .card {
   background: #fff;
   padding: 1rem;
@@ -325,3 +329,16 @@ p {
   font-size: 1.5rem;
 }
 
+/* Article */
+
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+
+#article .meta .category {
+  margin-top: 0.4rem;
+}
