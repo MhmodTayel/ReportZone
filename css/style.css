@@ -37,6 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Staatliches', cursive;
   margin-bottom: .55rem;
   line-height: 1.3;
+  font-weight: normal;
 }
 
 /* Utility */
@@ -98,10 +99,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: .6rem;
 }
 
-/* #main-nav .social i:first-child:hover {
-  color: var(--primary-color);
-} */
-
 #main-nav .social .fa-github:hover {
   color: #333;
 }
@@ -116,4 +113,37 @@ h1, h2, h3, h4, h5, h6 {
 
 #main-nav .social .fa-linkedin-in:hover {
   color: #2867B2;
+}
+
+/* Showcase */
+
+#showcase {
+  color: #fff;
+  background: #333;
+  padding: 2rem;
+  position: relative;
+}
+
+#showcase::before {
+  content: '';
+  background: url(../img/featured.jpg) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+#showcase .showcase-container {
+  /* display the content inside the showcase */
+  display: grid;
+  grid-template-columns: repeat(2,1fr); /* make the content in the right half of showcase and the left half is empty */ 
+  justify-content: center; /* center horizontal */
+  align-items: center;  /* center virtical */
+  height: 50vh; /* make the showcase have half of screen */ 
+}
+
+#showcase .showcase-content {
+  z-index: 1;
 }
