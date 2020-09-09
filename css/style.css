@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Staatliches&display=swap');
 
 :root{
-  --primary-color: #00a8ff;
+  --primary-color: #32beea;
   --secondary-color: #7f8fa6;
   --light-color: #f3f3f3;
   --dark-clor: #333;
@@ -47,3 +47,73 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
+/* Navigation */
+#main-nav {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#main-nav .container {
+  display: grid;
+  grid-template-columns: 6fr 3fr 2fr;
+  padding: 1rem;
+  align-items: center;
+}
+
+#main-nav .logo {
+  width: 180px;
+}
+
+#main-nav ul {
+  justify-self: end;
+  display: flex;
+}
+
+#main-nav ul li a {
+  padding: 0.75rem;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 0.4rem;
+}
+
+#main-nav ul li a.current {
+  background: var(--primary-color);
+  color: #fff;
+  
+}
+
+#main-nav ul li a:hover {
+  background: var(--dark-clor);
+  color: #fff;
+}
+
+#main-nav .social {
+  justify-self: center;
+}
+
+#main-nav .social i {
+  color: #777;
+  margin-right: .6rem;
+}
+
+/* #main-nav .social i:first-child:hover {
+  color: var(--primary-color);
+} */
+
+#main-nav .social .fa-github:hover {
+  color: #333;
+}
+
+#main-nav .social .fa-twitter:hover {
+  color: #1DA1F2;
+}
+
+#main-nav .social .fa-facebook:hover {
+  color: #3b5998;
+}
+
+#main-nav .social .fa-linkedin-in:hover {
+  color: #2867B2;
+}
