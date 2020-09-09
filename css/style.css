@@ -106,7 +106,7 @@ p {
   color: #fff;
 }
 .bg-primary {
-  background: var(--primary-clor);
+  background: var(--primary-color);
   color: #fff;
 }
 .bg-secondary {
