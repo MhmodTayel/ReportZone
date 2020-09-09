@@ -48,6 +48,48 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
+.category {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.category-sports {background: rgb(99, 177, 22); }
+.category-ent {background: rgb(230, 19, 212); }
+.category-tech {background: rgb(12, 158, 202); }
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: var(--dark-clor);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+}
+
+.btn-light {
+  background: var(--light-color);
+}
+.btn-primary {
+  background: var(--primary-color);
+}
+.btn-secondary {
+  background: var(--secondary-color);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.btn:hover {
+  opacity: 0.9;
+}
 /* Navigation */
 #main-nav {
   background: #fff;
@@ -146,4 +188,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #showcase .showcase-content {
   z-index: 1;
+}
+
+#showcase .showcase-content p {
+  margin-bottom: 1.3rem;
 }
